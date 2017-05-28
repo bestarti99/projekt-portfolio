@@ -1,13 +1,13 @@
 * {
-       margin: 0;
- padding: 0;
-    
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
+    color: #291f1a;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
     background-image: url('../img/header-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
     text-align: center;
     position: relative;
 }
@@ -26,11 +25,10 @@ header {
     background-color: #fefefe;
     text-align: right;
     font-size: 16px;
-    color: limegreen;
+    color: #1ac056;
     position: fixed;
     padding: 10px;
     top: 0;
-
 }
 
 #menu ul {
@@ -48,7 +46,8 @@ header {
     height: 170px;
     text-align: center;
     position: absolute;
-/* wypozycjonowanie centralnie w pionie i poziomie  */
+    color: white;
+    /* wypozycjonowanie centralnie w pionie i poziomie  */
     top: 0;
     bottom: 0;
     left: 0;
@@ -62,9 +61,11 @@ h1 {
     font-weight: 500;
 }
 
+
 /* zmiana koloru czcionki dla fragmentu tekstu w nagłówku - zamkniętego w znaczniku <span> */
+
 h1 span {
-    color: limegreen;
+    color: #1ac056;
 }
 
 h2 {
@@ -72,26 +73,168 @@ h2 {
     font-weight: 300;
 }
 
-
 section {
     width: 100%;
     height: 100vh;
     background-color: white;
     color: black;
     position: absolute;
-    }
-
-
-#foto {
-    width: 500px;
-    
 }
 
+#about-me {
+    height: 500px;
+    background-color: #efefef;
+}
 
 h3 {
-   font-size: 30px;    
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h3 span {
     color: limegreen;
 }
+
+#foto1 {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    height: 500px;
+    position: relative;
+}
+
+#foto1 img {
+    max-width: 300px;
+    /* wypozycjonowanie centralnie w pionie i poziomie  */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#decription1 {
+    display: inline-block;
+    float: left;
+    width: 55%;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+#decription1 p {
+    padding: 30px;
+}
+
+#center-skills {
+    text-align: center;
+}
+
+#center-skills p {
+    padding: 0 50px;
+}
+
+#skills-symbols {
+    text-align: center;
+}
+
+#skills-symbols figure {
+    display: inline-block;
+    padding: 30px 30px 10px;
+}
+
+/* SEKCJA PORTFOLIO */
+#portfolio {
+    text-align: center;
+    }
+
+/* kontener na obrazki */
+#container {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.bcg-img {
+    width: 33.333%;
+    height: 400px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+#port1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#port2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#port3 {
+    background-image: url('../img/portfolio3.jpg');
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+#mask-border {
+    margin: 10px;
+    border: 2px solid white;
+    height: 380px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* OPIS PROJEKTU */
+#project-desc {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;    
+    }
+
+#project-desc h4 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#project-desc p {
+    font-size: 18px;
+    padding-bottom: 20px;
+
+    }
+
+
+#project-desc h5 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* wyczyszczenie efektu float */
+.clear {
+    clear: both;
+    height: 1px;
+}
+
