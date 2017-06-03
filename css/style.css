@@ -218,12 +218,14 @@ h3 span {
 
 /* OPIS PROJEKTU */
 .project-desc {
-    width: 100%;
-    height: 100%;
     color: white;
     text-align: center;
     padding: 15px;
     box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
 }
 
 .project-desc h4 {
@@ -245,6 +247,7 @@ h3 span {
 
 .project-desc .port-link {
     font-size: 30px;
+    color: white;
     }
 
 /* wyczyszczenie efektu float */
@@ -260,10 +263,14 @@ h3 span {
     width: 100%;
 }
 
-#contact_me>div {
+#contact_me > div {
     width: 50%;
-    display: inline-block;
     float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#contact_me .clear {
+    padding: 0px;
 }
 
 #contact_me cont1 #footer-cont {
@@ -291,17 +298,21 @@ h3 span {
     padding: 50px 0px 0px 0px;
 }
 
-a {
+#contact_me div a {
     color: #1ac056;
 }
 
-#contact_me>.clear {
+#contact_me div h3 {
+    color: white;
+}
+
+#contact_me >.clear {
     float: none;
 }
 
 #contact_me #social {
     width: 100%;
-    padding: 0px 50px 50px;
+    padding: 50px 50px 0px 0px;
     box-sizing: border-box;
 }
 
@@ -327,4 +338,39 @@ a {
     background-color: white;
     border: 2px solid white;
     line-height: 50px;
+}
+
+#contact_me div form input,
+#contact_me div form textarea {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    margin-top: 25px;
+    color: #768f95;
+    font-size: 18px;
+    border: none;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: #436e83;
+
+  }
+
+#contact_me div form textarea {
+    height: 6rem;
+    padding: 10px 10px;
+}
+
+
+#contact_me div form #submit {
+    width: 20%;
+    background-color: #1ac056;
+    float: right;
+    color: white;
+    border: 1px white solid;
+}
+
+footer div {
+    background-color: #102a40;
+    color: #efefef;
+    padding: 10px 50px;
 }
