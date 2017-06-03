@@ -1,0 +1,43 @@
+    /* !!! ZACZYNAMY OD WIĘKSZYCH WARTOŚCI EKRANU */
+
+
+/* Włączenie menu i ustawienie go w pionie */
+@media (max-width: 1200px) {
+    section #about-me {
+        height: auto;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section #about-me {
+        height: auto;
+    }
+    
+    
+    #menu .toggle {
+        display: block;
+        background-color: #ffffff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: center;
+    }
+    /*  wyłączenie uk  */
+    #menu ul {
+        display: none;
+    }
+    #menu #drop:checked+ul {
+        display: block;
+    }
+    #menu>ul>li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: right;
+    }

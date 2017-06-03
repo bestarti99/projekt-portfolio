@@ -8,6 +8,7 @@ body {
     font-size: 20px;
     width: 100%;
     color: #291f1a;
+    
 }
 
 
@@ -26,7 +27,10 @@ body {
     /* podniesienie kolejności wyświetlania -  na wierzch */
     z-index: 1;
 }
-
+/* menu nawigacyjne dla wersji responsywnej - ukryte domyślnie */
+#menu .toggle, [id="drop"] {
+    display: none;
+}
 
 /* NAGŁÓWEK*/
 
