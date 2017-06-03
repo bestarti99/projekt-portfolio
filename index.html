@@ -20,52 +20,49 @@
 
 <body>
     <!--  Nagłówek z manu nawigacyjnym  -->
+    <!--  Nawigacja strony -->
+    <nav id="menu">
+        <ul>
+            <li>o mnie</li>
+            <li>umiejętności</li>
+            <li>portfolio</li>
+            <li>kontakt</li>
+        </ul>
+    </nav>
+
     <header>
-
-        <!--  Nawigacja strony -->
-        <nav id="menu">
-            <ul>
-                <li>o mnie</li>
-                <li>umiejętności</li>
-                <li>portfolio</li>
-                <li>kontakt</li>
-            </ul>
-        </nav>
-        <div id="top-background"></div>
-
         <!--  Treści nagłówkowe -->
         <div id="centered">
             <!-- Żeby zmienić styl dla częsci treści w danym znaczniku, należy zamknąć go w znacznik <span>  -->
             <h1>Artur <span>Poznański</span></h1>
             <h2>Front-End Developer</h2>
         </div>
-
-
     </header>
 
-<!-- Sekcja z poszczególnymi artykulami  -->
-    <section>
+    <!-- Sekcja z poszczególnymi artykulami  -->
+    <section id="curiculum">
 
         <!-- SEKCJA "o mnie"  -->
         <article id="about-me">
 
-
             <div id="foto1">
                 <img id="me" src="img/jan-nowak.jpg" alt="To oczywiście ja">
             </div>
+
             <div id="decription1">
                 <h3>O <span>mnie</span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eum, voluptatibus ratione cum. Corrupti aliquid dolore perferendis illum autem nostrum accusamus eum architecto reiciendis asperiores voluptates, consequatur, commodi est, minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione enim, esse tempora voluptas obcaecati iste eveniet aspernatur adipisci ducimus excepturi laudantium eum animi vel aliquid dignissimos libero explicabo non ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quas! Ipsa, laboriosam incidunt, amet cum nam itaque fugit tenetur! Sed non, quas eum amet minima. Ex voluptas dolores aliquam, possimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur reprehenderit iure magnam neque quod saepe magni, veritatis natus assumenda distinctio inventore voluptatibus fugit dolores fuga cum sed autem</p>
             </div>
+            
+            <!-- wyczyszczenie inline-blocka -->
             <div class="clear"></div>
+            
         </article>
 
         <!-- SEKCJA "umiejętności"  -->
         <article id="skills">
-            <div id="center-skills">
-                <h3>Moje <span>umiejętności</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tenetur quibusdam ipsam inventore a qui commodi, fugit nemo deserunt incidunt, iure provident harum dignissimos obcaecati saepe facilis voluptatem. Ab, repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere totam nesciunt saepe voluptate soluta fugiat animi, voluptates nemo veritatis, enim expedita? Maiores nobis blanditiis vero officiis repellendus rem dignissimos?</p>
-            </div>
+            <h3>Moje <span>umiejętności</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tenetur quibusdam ipsam inventore a qui commodi, fugit nemo deserunt incidunt, iure provident harum dignissimos obcaecati saepe facilis voluptatem. Ab, repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere totam nesciunt saepe voluptate soluta fugiat animi, voluptates nemo veritatis, enim expedita? Maiores nobis blanditiis vero officiis repellendus rem dignissimos?</p>
 
             <!-- Kontener z symbolami używanych technologii -->
             <div id="skills-symbols">
@@ -110,6 +107,9 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt minus suscipit molestias nulla culpa ducimus temporibus, nihil deserunt et! Inventore asperiores vitae autem doloribus repudiandae commodi, omnis natus enim.</p>
                                 <h5>Wykorzystane technologie</h5>
                                 <p>HTML 5, CSS 3, RWD, Bootstrap, JavaScript, jQuery</p>
+                                <a href="https://www.portfolio1.com/" class="port-link">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -147,19 +147,76 @@
             </div>
         </article>
     </section>
-    
-       
-<!-- SEKCJA KONTAKT -->
-       <footer>
-            <div id="footer-cont">
-            
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse commodi quibusdam fugit molestias repellendus autem maiores, incidunt vero voluptates. Facere tempore praesentium voluptatum voluptate assumenda ea ad necessitatibus cupiditate.</p>
-            
-        </div>   
-        
-        
-    </footer>
+
+
+    <!-- SEKCJA KONTAKT -->
+    <section id="contact_me">
+        <div id="cont1">
+            <h3>Jan <span>Nowak</span></h3>
+            <address id="footer-cont">
+                    
+                <!-- Pojemnik z danymi -->
+                <div id="contact">
+                    <p>ul. Mostowa 6/13</p>
+                    <p>30-061 Kraków</p>
+                    <p id="tel">tel. 606 74 57 59</p>
+                    <p>e-mail:
+                        <a href="mailto:bestarti@interia.pl">bestarti@interia.pl</a>
+                    </p>
+                </div>
+
+            </address>
+
+            <!-- Linki do social media -->
+            <div id="social">
+                <a href="https://www.facebook.com/" id="fb" class="social-box">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://plus.google.com" id="google-plus" class="social-box">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://twitter.com" id="tw" class="social-box">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com" id="fb" class="social-box">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+
+
+
+            </div>
+
+        </div>
+
+        <!--  utworzenie fomularza, skorzystanie z przesyłania maila z danymi za pomocą formspree.io -->
+        <div id="cont2">
+            <form action="https://formspree.io/bestarti@interia.pl" method="POST">
+
+                <!--  pole tekstowe Imię i Nazwisko -->
+                <label for="name"></label>
+                <input type="text" name="Imie" id="name" value="Imię i nazwisko" />
+
+                <!--  pole tekstowe e-mail -->
+                <label for="email"></label>
+                <input type="email" name="email" id="surname" val="e-mail" />
+
+                <!--   Wiadomość - textarea     <-->
+                <label for="message"></label>
+                <textarea name="message" id="message" maxlength="1200"></textarea>
+
+                <!--  Przycisk potwierdzający wypełnienie formularza i wysyłający zgłoszenie na skrzynkę mailową -->
+                <input type="submit" id="submit" value="WYŚLIJ">
+            </form>
+            <!--  koniec formularza  -->
+        </div>
+
+        <!-- wyczyszczenie floata - wstawienie clear -->
+        <div class="clear"></div>
+
+    </section>
 
 
 

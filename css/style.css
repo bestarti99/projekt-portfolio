@@ -10,6 +10,26 @@ body {
     color: #291f1a;
 }
 
+
+/* MENU NAWIGACYJNE */
+
+#menu {
+    width: 100%;
+    background-color: #fefefe;
+    text-align: right;
+    font-size: 16px;
+    color: #1ac056;
+    /*    */
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    /* podniesienie kolejności wyświetlania -  na wierzch */
+    z-index: 1;
+}
+
+
+/* NAGŁÓWEK*/
+
 header {
     width: 100%;
     height: 100vh;
@@ -18,17 +38,6 @@ header {
     background-size: cover;
     text-align: center;
     position: relative;
-}
-
-#menu {
-    width: 100%;
-    background-color: #fefefe;
-    text-align: right;
-    font-size: 16px;
-    color: #1ac056;
-    position: fixed;
-    padding: 10px;
-    top: 0;
 }
 
 #menu ul {
@@ -41,7 +50,7 @@ header {
     margin-right: 70px;
 }
 
-#centered {
+header #centered {
     width: 600px;
     height: 170px;
     text-align: center;
@@ -73,13 +82,16 @@ h2 {
     font-weight: 300;
 }
 
-section {
+
+/* SEKCJA O MNIE */
+
+#curiculum {
     width: 100%;
     background-color: white;
     color: black;
 }
 
-#about-me {
+section #about-me {
     height: 500px;
     background-color: #efefef;
 }
@@ -88,10 +100,12 @@ h3 {
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: 400;
 }
 
 h3 span {
     color: limegreen;
+    font-weight: 600;
 }
 
 #foto1 {
@@ -113,6 +127,7 @@ h3 span {
     position: absolute;
 }
 
+/* Właściwości opisu */
 #decription1 {
     display: inline-block;
     float: left;
@@ -125,27 +140,28 @@ h3 span {
     padding: 30px;
 }
 
-#center-skills {
+#skills {
     text-align: center;
 }
 
-#center-skills p {
+#skills p {
     padding: 0 50px;
 }
 
-#skills-symbols {
+#skills #skills-symbols {
     text-align: center;
 }
 
-#skills-symbols figure {
+#skills #skills-symbols figure {
     display: inline-block;
     padding: 30px 30px 10px;
 }
 
+
 /* SEKCJA PORTFOLIO */
 #portfolio {
     text-align: center;
-    }
+}
 
 /* kontener na obrazki */
 #container {
@@ -163,7 +179,6 @@ h3 span {
     background-size: cover;
     position: relative;
 }
-
 
 #port1 {
     background-image: url('../img/portfolio1.jpg');
@@ -200,6 +215,7 @@ h3 span {
     box-sizing: border-box;
 }
 
+
 /* OPIS PROJEKTU */
 .project-desc {
     width: 100%;
@@ -207,8 +223,8 @@ h3 span {
     color: white;
     text-align: center;
     padding: 15px;
-    box-sizing: border-box;    
-    }
+    box-sizing: border-box;
+}
 
 .project-desc h4 {
     font-size: 22px;
@@ -219,9 +235,7 @@ h3 span {
 .project-desc p {
     font-size: 18px;
     padding-bottom: 20px;
-
-    }
-
+}
 
 .project-desc h5 {
     font-weight: 700;
@@ -229,17 +243,88 @@ h3 span {
     padding-bottom: 20px;
 }
 
+.project-desc .port-link {
+    font-size: 30px;
+    }
 
 /* wyczyszczenie efektu float */
+
 .clear {
     clear: both;
     height: 1px;
+    float: none;
 }
 
-footer {
+#contact_me {
     background-color: #213b50;
     width: 100%;
-    height: 300px;
 }
 
+#contact_me>div {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
 
+#contact_me cont1 #footer-cont {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#contact {
+    width: 50%;
+    font-style: normal;
+}
+
+#contact h3,
+#contact p {
+    color: white;
+    text-decoration: none;
+}
+
+#contact p {
+    line-height: 1.5em;
+}
+
+#tel {
+    padding: 50px 0px 0px 0px;
+}
+
+a {
+    color: #1ac056;
+}
+
+#contact_me>.clear {
+    float: none;
+}
+
+#contact_me #social {
+    width: 100%;
+    padding: 0px 50px 50px;
+    box-sizing: border-box;
+}
+
+#contact_me #social .social-box {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    line-height: 50px;
+    margin-right: 30px;
+}
+
+#contact_me #social .social-box:hover {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: #291f1a;
+    background-color: white;
+    border: 2px solid white;
+    line-height: 50px;
+}
